@@ -1,0 +1,39 @@
+INÍCIO
+
+    opções ← ["1 - saldo", "2 - depósito", "3 - sacar", "4 - encerrar"]
+
+    ENQUANTO VERDADEIRO FAÇA
+
+        ESCREVA "Escolha uma opção:"
+
+        PARA cada item EM opções FAÇA
+            ESCREVA item
+        FIM PARA
+
+        LEIA escolha
+
+        SE escolha = "1" ENTÃO
+            ESCREVA "Saldo atual: R$ 1000,00"
+
+        SENÃO SE escolha = "2" ENTÃO
+            ESCREVA "Digite o valor do depósito: R$ "
+            LEIA valor
+            ESCREVA "Depósito de R$ ", valor, " realizado com sucesso."
+
+        SENÃO SE escolha = "3" ENTÃO
+            ESCREVA "Digite o valor do saque: R$ "
+            LEIA valor
+            ESCREVA "Saque de R$ ", valor, " realizado com sucesso."
+
+        SENÃO SE escolha = "4" ENTÃO
+            ESCREVA "Encerrando o programa. Obrigado!"
+            PARE
+
+        SENÃO
+            ESCREVA "Opção inválida. Tente novamente."
+
+        FIM SE
+
+    FIM ENQUANTO
+
+FIM 
